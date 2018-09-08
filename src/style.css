@@ -1,0 +1,155 @@
+html, body {
+    line-height: 30px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+h1,h2,h3,h4,h5,p,div,ffn, ._ffn_textNode {
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    /* --creme: #FFEDE1;
+    --grey: rgba(194, 194, 194, 1);
+    --black: rgba(27, 23, 37, 1);
+    --light-grey: rgba(221, 223, 223, 1);
+    --blue: rgba(34, 108, 224, 1);
+    --brown: #916953; */
+
+    --black: #222831;
+    /* --purple: #643A71; */
+    --grey: #626868;
+    --blue: #48ACF0;
+    --green: #00adb5;
+    --light: #eeeeee;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#find-out-more {
+    color: var(--light);
+    background: var(--blue);
+}
+
+#find-out-more:hover {
+    background: var(--green);
+}
+
+.nav-section {
+    /* background: red; */
+    /* position: absolute; */
+    /* top: 100%; */
+    /* width: 100%; */
+    height: 100%;
+}
+.section {
+    height: 100%;
+}
+
+.section-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#intro {
+    background: url('./assets/norway.jpg') center no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    height: 100%;
+}
+
+#about {
+    background: var(--light);
+}
+
+
+#xp {
+    background: var(--grey);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#projects {
+    background: var(--light);
+}
+
+.inverted {
+    color: var(--light);
+}
+
+h1 {
+    /* color: var(--light-grey); */
+    font-size: 40pt;
+    color: var(--black);
+    text-shadow: 0px 1px 0px #555;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--light);
+    text-shadow: 0px 1px 0px #777;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.item-reversed {
+    color: var(--light);
+    text-shadow: 0px 1px 0px #777;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 5px;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.item-reversed:hover {
+    color: var(--blue);
+}
+
+.fixed-top {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.ic {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--black);
+}
+
+.ic:hover {
+    color: var(--green);
+}
+
+.footer {
+    background: var(--light);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 20px;
+    z-index: 9;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.footer-inverted {
+    display: none;
+}
