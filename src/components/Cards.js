@@ -28,6 +28,7 @@ export default class Cards extends React.Component {
                 </Grid.Column>
                 <Grid.Column width={12}>
                     <Card   fluid
+                            centered={false}
                             header={header}
                             description={description}
                             extra={extra}

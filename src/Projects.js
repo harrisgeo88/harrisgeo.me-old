@@ -13,7 +13,7 @@ export default class About extends React.Component {
             icon: "fas fa-code"
         },
         {
-            body: <span>Checkout my <a {...this.aProps} href="">travel map</a>. I build it for my talk at <a {...this.aProps} href="http://jsmonthly.org">JS Monthly London</a>.<br/> Topic? <b>State management in React</b> using <a {...this.aProps} href="https://mobx.js.org">#MobX</a>. Here is also the <a {...this.aProps} href="https://www.youtube.com/watch?v=0DPATD3yi6k">video</a> :)</span>,
+            body: <span>Checkout my <a {...this.aProps} href="https://github.com/harrisgeo88/my-travel-map">travel map</a>. I build it for my talk at <a {...this.aProps} href="http://jsmonthly.org">JS Monthly London</a>.<br/> Topic? <b>State management in ReactJS</b> using <a {...this.aProps} href="https://mobx.js.org">#MobX</a>. Here is also the <a {...this.aProps} href="https://www.youtube.com/watch?v=0DPATD3yi6k">video</a> :)</span>,
             icon: "fas fa-globe-asia"
         },
         {
