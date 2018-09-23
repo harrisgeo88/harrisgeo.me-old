@@ -1,0 +1,75 @@
+@media screen and (max-width: 762px) {
+
+    #navbar {
+        width: 100%;
+    }
+
+    #title-desktop {
+        display: none;
+    }
+
+    #title-mobile {
+        display: block;
+    }
+
+    #navbar-container {
+        display: none;
+    }
+
+    #navbar > .item, #navbar > .item-reversed, .item {
+        width: 100%;
+    }
+
+    #navbar-bars, #navbar-bars-fixed {
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        display: block;
+        background: none;
+        z-index: 9;
+    }
+    
+    #navbar-bars-fixed {
+        position: fixed;
+    }
+
+    #navbar-container-mobile {
+        height: 225px;
+    }
+
+    .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+    }
+    
+    .item-reversed:not(.title), .ui.menu:not(.vertical) .item:not(.title) {
+        position: relative;
+        background: rgba(0, 0, 0, 0.2);
+        left: 0px;
+        width: 100%;
+        top: 0px;
+        display: block;
+        height: 50px;
+        text-align: center;
+    }
+
+    .open-menu {
+        visibility: hidden;
+    }
+
+    .ui.menu:not(.vertical) .item {
+        background: none;
+        margin-top: 5px;
+    }
+
+    .fixed > .right {
+        background: white;
+    }
+
+    .fixed > .right > .item-reversed:not(.title), .ui.menu:not(.vertical) .item:not(.title) {
+        background: white;
+    }
+}

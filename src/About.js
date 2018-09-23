@@ -22,16 +22,16 @@ export default class About extends React.Component {
                     projects</Link>
                     <br/><br/>
                     <a href="https://github.com/harrisgeo88" {...props}>
-                        <i class="fab fa-github fa-2x ic"/>
+                        <i className="fab fa-github fa-2x ic"/>
                     </a>
                     <a href="https://www.linkedin.com/in/charilaos-georgakakis/" {...props}>
-                        <i class="fab fa-linkedin-in fa-2x ic"/>
+                        <i className="fab fa-linkedin-in fa-2x ic"/>
                     </a>
                     <a href="https://twitter.com/harrisgeo88" {...props}>
-                        <i class="fab fa-twitter fa-2x ic"/>
+                        <i className="fab fa-twitter fa-2x ic"/>
                     </a>
                     <a href="https://www.instagram.com/harrisgeo88/" {...props}>
-                        <i class="fab fa-instagram fa-2x ic"/>
+                        <i className="fab fa-instagram fa-2x ic"/>
                     </a>
 
                 </p>
