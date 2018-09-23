@@ -61,12 +61,6 @@ h1,h2,h3,h4,h5,p,div,ffn, ._ffn_textNode {
     display: none;
 }
 
-#navbar-container {
-    /* background: red;
-    width: 100%;
-     */
-}
-
 .section {
     height: 100%;
 }
@@ -176,4 +170,9 @@ a:hover {
 
 .xp-description {
     text-align: left;
+}
+
+
+.ui.grid>div.row.responsive-row {
+    display: none;
 }

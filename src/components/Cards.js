@@ -23,10 +23,7 @@ export default class Cards extends React.Component {
         let {header, description, extra, meta} = roles[selected]
         return <Grid>
             <Grid.Row>
-                <Grid.Column width={2} verticalAlign="middle">
-                    <Button circular onClick={() => this.click(true)} icon='arrow left' />
-                </Grid.Column>
-                <Grid.Column width={12}>
+                <Grid.Column width={16}>
                     <Card   fluid
                             centered={false}
                             header={header}
@@ -34,8 +31,13 @@ export default class Cards extends React.Component {
                             extra={extra}
                             meta={meta} />
                 </Grid.Column>
-                <Grid.Column width={2} verticalAlign="middle">
-                    <Button circular onClick={() => this.click(false)} icon='arrow right' />
+            </Grid.Row>
+            <Grid.Row className="responsive-row">
+                <Grid.Column width={8}>
+                    <Button circular onClick={() => this.click(true)} icon="arrow left"/>
+                </Grid.Column>
+                <Grid.Column width={8}>
+                    <Button circular onClick={() => this.click()} icon="arrow right"/>
                 </Grid.Column>
             </Grid.Row>
         </Grid>
