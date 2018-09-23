@@ -100,7 +100,7 @@
         display: none;
     }
 
-    .row.responsive-row {
+    .ui.grid>div.row.responsive-row {
         display: block;
     }
 }
