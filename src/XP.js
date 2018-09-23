@@ -18,7 +18,7 @@ export default class XP extends React.Component {
         if (string !== '') {
             let words = _.split(string, ',')
             return words.map((word,i) => {
-                return <span>
+                return <span key={i}>
                     <a>{word}</a>{i+1 !== words.length ? ',' : ''}
                 </span>
             })

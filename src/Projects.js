@@ -23,8 +23,8 @@ export default class About extends React.Component {
     ]
 
     renderProjects = () => {
-        return this.projects.map((project) => {
-            return <List.Item style={{marginBottom: 20}}>
+        return this.projects.map((project, i) => {
+            return <List.Item key={i} style={{marginBottom: 20}}>
              <i className={project.icon} style={{paddingRight: 10}}/>{project.body}
         </List.Item>
         })
