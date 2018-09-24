@@ -108,7 +108,6 @@ export default class XP extends React.Component {
             <div className="section-container">
                     <h1 className="inverted">My Experience</h1>
                     <Steps {...props} />
-                    <br/>
                     <Cards {...props} />
             </div>
         </div>

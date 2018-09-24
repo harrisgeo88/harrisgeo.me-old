@@ -21,23 +21,22 @@ export default class Cards extends React.Component {
     render() {
         let {roles, selected} = this.props
         let {header, description, extra, meta} = roles[selected]
-        return <Grid>
+        return <Grid centered padded>
             <Grid.Row>
-                <Grid.Column width={16}>
-                    <Card   fluid
-                            centered={false}
-                            header={header}
-                            description={description}
-                            extra={extra}
-                            meta={meta} />
-                </Grid.Column>
+                <Card   fluid
+                        id="role-content"
+                        centered={true}
+                        header={header}
+                        description={description}
+                        extra={extra}
+                        meta={meta} />
             </Grid.Row>
             <Grid.Row className="responsive-row">
-                <Grid.Column width={8}>
-                    <Button circular onClick={() => this.click(true)} icon="arrow left"/>
+                <Grid.Column mobile={8} floated="right">
+                    <Button circular style={{float: 'left'}} onClick={() => this.click(true)} icon="arrow left"/>
                 </Grid.Column>
-                <Grid.Column width={8}>
-                    <Button circular onClick={() => this.click()} icon="arrow right"/>
+                <Grid.Column mobile={8} floated="right">
+                    <Button circular style={{float: 'right'}} onClick={() => this.click()} icon="arrow right"/>
                 </Grid.Column>
             </Grid.Row>
         </Grid>

@@ -172,6 +172,10 @@ a:hover {
     text-align: left;
 }
 
+.ui.small.steps {
+    margin-bottom: 20px;
+}
+
 
 .ui.grid>div.row.responsive-row {
     display: none;

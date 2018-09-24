@@ -7,6 +7,9 @@
     h1 {
         font-size: 32pt;
     }
+    h1.inverted {
+        word-wrap: break-word
+    }
     h2 {
         font-size: 24pt;
     }
@@ -102,5 +105,9 @@
 
     .ui.grid>div.row.responsive-row {
         display: block;
+    }
+
+    #role-content, #role-content > .content {
+        width: 300px;
     }
 }
