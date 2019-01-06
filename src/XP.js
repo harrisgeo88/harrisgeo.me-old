@@ -1,6 +1,6 @@
 import React from 'react'
 import Steps from './components/Steps'
-import Cards from './components/Cards'
+import Content from './components/Content'
 import _ from 'lodash'
 
 export default class XP extends React.Component {
@@ -29,9 +29,9 @@ export default class XP extends React.Component {
         {
             header: "Lead developer",
             meta: "Trunomi",
-            description: <p {...this.xpProps}>Due to the nature of the Lead developer role I started being more involved 
-                into requirements and further planning. From a technical point of view I started doing more code reviews 
-                and managing the sprint's cycles from requirements to development and then QA until we are ready for a 
+            description: <p {...this.xpProps}>Due to the nature of the Lead developer role I started being more involved
+                into requirements and further planning. From a technical point of view I started doing more code reviews
+                and managing the sprint's cycles from requirements to development and then QA until we are ready for a
                 release.
                 <br/><br/>
                 Due to being more involved in the higher end of the company's processes I started adding User Experience (UX) in our system to make it more usable.
@@ -39,7 +39,7 @@ export default class XP extends React.Component {
                 The ongoing process of moving the company's APIs from node to Golang kept being the same but now is more part of the company process instead of a side project. We also started a data science hackathon.
                 <br/><br/>
                 Stuff I've been doing here:<br/>
-                {this.renderKeywords('Go, ReactJS, React Native, NodeJS, Typescript, MobX for React state management, GraphQL, CrateDB, Redis, Bootstrap, Material-UI, Kanban')}
+                {this.renderKeywords('Go, React, React Native, NodeJS, Typescript, React state management with Mobx, GraphQL, CrateDB, Redis, Postgres')}
             </p>,
             extra: "August 2018 - now",
             icon: 'fighter jet',
@@ -48,14 +48,14 @@ export default class XP extends React.Component {
         {
             header: "Full Stack Developer",
             meta: "Trunomi",
-            description: <p {...this.xpProps}>My big career step into the Fintech and Data Privacy industry. 
+            description: <p {...this.xpProps}>My big career step into the Fintech and Data Privacy industry.
                 I started developing the company's self service systems as well as adding new features to the existing APIs.
                 <br/><br/>
                 While being a full stack developer I managed to do a complete redesign of the company's UIs. We also started to transfer the company's API to Golang.
                 Overtime I started dealing with a lot of sprint management responsibilities and eventually I became the company's lead developer.
                 <br/><br/>
                 Stuff I did here:<br/>
-                {this.renderKeywords('ReactJS, NodeJS, Typescript, Laravel MVC, Python Selenium, MobX for React state management, GraphQL, CrateDB, Redis, Bootstrap, Material-UI, Scrum & Kanban')}
+                {this.renderKeywords('React, Node.js, Typescript, Laravel, Python Selenium, React state management with Mobx, GraphQL, CrateDB, Redis, Bootstrap, Material-UI')}
             </p>,
             extra: "August 2017 - August 2018",
             icon: 'plane',
@@ -64,8 +64,8 @@ export default class XP extends React.Component {
         {
             header: "Software Developer",
             meta: "Veoo Ltd",
-            description: <p {...this.xpProps}>Further into the telecommunications industry, Veoo is a mobile aggregator. 
-                My role mainly involed developing new features and maintaining the company's custom made CMS system. 
+            description: <p {...this.xpProps}>Further into the telecommunications industry, Veoo is a mobile aggregator.
+                My role mainly involed developing new features and maintaining the company's custom made CMS system.
                 After I joined we started rebuilding the company's customer portal in React.
                 <br/><br/>
                 Stuff I did here:<br/>
@@ -78,9 +78,9 @@ export default class XP extends React.Component {
         {
             header: "Programmer",
             meta: "VisionSMS Ltd",
-            description: <p {...this.xpProps}>My first job after finishing with the university. I was based in Glasgow, 
-                Scotland. The company dealt with mobile marketing. My role mainly involved building custom SMS gateways 
-                in PHP. Apart from that I dealt a lot Devops related tasks like setting up the host and email servers 
+            description: <p {...this.xpProps}>My first job after finishing with the university. I was based in Glasgow,
+                Scotland. The company dealt with mobile marketing. My role mainly involved building custom SMS gateways
+                in PHP. Apart from that I dealt a lot Devops related tasks like setting up the host and email servers
                 of multiple environments of the company.
                 <br/><br/>
                 Stuff I did here:<br/>
@@ -89,7 +89,7 @@ export default class XP extends React.Component {
             extra: "May 2013 - June 2014",
             icon: 'bicycle',
             when: '2013,5'
-        },   
+        },
     ]
 
     onClick = (i) => {
@@ -97,7 +97,7 @@ export default class XP extends React.Component {
     }
 
 
-    
+
     render() {
         let props = {
             roles: this.roles,
@@ -106,9 +106,9 @@ export default class XP extends React.Component {
         }
         return <div id="xp" className="section">
             <div className="section-container">
-                    <h1 className="inverted">My Experience</h1>
+                    <h1>My Experience</h1>
                     <Steps {...props} />
-                    <Cards {...props} />
+                    <Content {...props} />
             </div>
         </div>
     }

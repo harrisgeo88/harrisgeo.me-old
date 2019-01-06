@@ -5,13 +5,13 @@
     }
 
     h1 {
-        font-size: 32pt;
+        font-size: 24pt;
     }
     h1.inverted {
         word-wrap: break-word
     }
     h2 {
-        font-size: 24pt;
+        font-size: 20pt;
     }
     h3 {
         font-size: 16pt;
@@ -45,7 +45,7 @@
         background: none;
         z-index: 9;
     }
-    
+
     #navbar-bars-fixed {
         position: fixed;
     }
@@ -103,8 +103,9 @@
         display: none;
     }
 
-    .ui.grid>div.row.responsive-row {
+    div.responsive-row {
         display: block;
+        z-index: 99999999;
     }
 
     #role-content, #role-content > .content {

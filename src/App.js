@@ -7,7 +7,7 @@ import Navbar from './components/Navbar'
 
 
 export default class App extends React.Component {
-        
+
     state = {context2: null, contextRef: null}
     handleContextRef = contextRef => this.setState({ contextRef })
     render() {
@@ -16,8 +16,8 @@ export default class App extends React.Component {
                 <Intro />
             </Navbar>
             <About />
-            <XP />
             <Projects />
+            <XP />
         </div>
     }
 }

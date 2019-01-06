@@ -1,5 +1,6 @@
 import React from 'react'
 import {List} from 'semantic-ui-react'
+import {Link} from 'react-scroll'
 
 export default class About extends React.Component {
 
@@ -20,20 +21,28 @@ export default class About extends React.Component {
             body: <span>I have more cool projects on github! check them out <a {...this.aProps} href="https://github.com/harrisgeo88">here</a>...</span>,
             icon: "fab fa-github-square"
         },
+        {
+            body: <span>You can also check how I got most of my experience
+                <Link to="xp" style={{paddingLeft: 5}} smooth={true} duration={500} className="active item">
+                    here
+                </Link>
+                </span>,
+            icon: "fab fa-github-square"
+        },
     ]
 
     renderProjects = () => {
         return this.projects.map((project, i) => {
-            return <List.Item key={i} style={{marginBottom: 20}}>
-             <i className={project.icon} style={{paddingRight: 10}}/>{project.body}
+            return <List.Item key={i} style={{marginBottom: 20, color: "var(--light)"}}>
+                <i className={project.icon} style={{paddingRight: 10}}/>{project.body}
         </List.Item>
         })
     }
 
     render() {
         return <div id="projects" className="section">
-            <div className="section-container">
-                <h1 className="">Projects</h1>
+            <div id="projects" className="section-container">
+                <h1 className="inverted">Projects</h1>
                 <List animated verticalAlign='middle' size="large">
                     {this.renderProjects()}
                 </List>

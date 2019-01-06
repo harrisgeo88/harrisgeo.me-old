@@ -68,9 +68,11 @@ h1,h2,h3,h4,h5,p,div,ffn, ._ffn_textNode {
 .section-container {
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    /* left: 50%; */
+    transform: translate(0%, -50%);
+    text-align: left;
+    margin: auto auto;
+    width: 70%;
 }
 
 #intro {
@@ -78,29 +80,38 @@ h1,h2,h3,h4,h5,p,div,ffn, ._ffn_textNode {
     background-size: cover;
     opacity: 0.8;
     height: 100%;
+    text-align: center;
+}
+
+#intro>.section-container {
+    text-align: center;
 }
 
 #about {
     background: var(--light);
 }
 
-
 #xp {
-    background: var(--grey);
-    padding-left: 50px;
-    padding-right: 50px;
+    /* background: var(--grey); */
+    background: var(--light);
 }
 
 #projects {
-    background: var(--light);
+
+    background: var(--grey);
 }
 
 .inverted {
     color: var(--light);
 }
 
+.black {
+    color: var(--black);
+}
+
 h1 {
     /* color: var(--light-grey); */
+    text-align: center;
     font-size: 40pt;
     color: var(--black);
     text-shadow: 0px 1px 0px #555;
@@ -135,6 +146,10 @@ a:hover {
 
 .item-reversed:hover {
     color: var(--blue);
+}
+
+.steps {
+    text-align: center;
 }
 
 .fixed-top {
@@ -177,6 +192,6 @@ a:hover {
 }
 
 
-.ui.grid>div.row.responsive-row {
+div.responsive-row {
     display: none;
 }

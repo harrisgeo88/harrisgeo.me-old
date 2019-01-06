@@ -2,10 +2,8 @@ import React from 'react'
 import {Menu, Visibility, Button} from 'semantic-ui-react'
 import {Link} from 'react-scroll'
 
-
-
 export default class Navbar extends React.Component {
-    
+
     state = {primary: false, menu: false}
 
     primary = () => {
@@ -42,8 +40,8 @@ export default class Navbar extends React.Component {
                         <Menu.Menu id={menu ? "navbar-container-mobile" : "navbar-container"} position='right'>
                             <Link to="intro" {...props}>Intro</Link>
                             <Link to="about" offset={1} {...props}>About</Link>
-                            <Link to="xp" {...props}>Experience</Link>
                             <Link to="projects" {...props}>Projects</Link>
+                            <Link to="xp" {...props}>Experience</Link>
                         </Menu.Menu>
                     <Button id={primary ? "navbar-bars-fixed" : "navbar-bars"} icon="bars" onClick={this.show} />
             </Menu>
