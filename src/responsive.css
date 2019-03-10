@@ -1,114 +1,120 @@
 @media screen and (max-width: 762px) {
+  body {
+    font-size: 8pt;
+  }
 
-    body {
-        font-size: 8pt;
-    }
+  h1 {
+    font-size: 24pt;
+  }
+  h1.inverted {
+    word-wrap: break-word;
+  }
+  h2 {
+    font-size: 20pt;
+  }
+  h3 {
+    font-size: 16pt;
+  }
 
-    h1 {
-        font-size: 24pt;
-    }
-    h1.inverted {
-        word-wrap: break-word
-    }
-    h2 {
-        font-size: 20pt;
-    }
-    h3 {
-        font-size: 16pt;
-    }
+  #navbar {
+    width: 100%;
+  }
 
-    #navbar {
-        width: 100%;
-    }
+  #title-desktop {
+    display: none;
+  }
 
-    #title-desktop {
-        display: none;
-    }
+  #title-mobile {
+    display: block;
+  }
 
-    #title-mobile {
-        display: block;
-    }
+  #navbar-container {
+    display: none;
+  }
 
-    #navbar-container {
-        display: none;
-    }
+  #navbar > .item,
+  #navbar > .item-reversed,
+  .item {
+    width: 100%;
+  }
 
-    #navbar > .item, #navbar > .item-reversed, .item {
-        width: 100%;
-    }
+  #navbar-bars,
+  #navbar-bars-fixed {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    display: block;
+    background: none;
+    z-index: 9;
+  }
 
-    #navbar-bars, #navbar-bars-fixed {
-        position: absolute;
-        right: 0px;
-        top: 5px;
-        display: block;
-        background: none;
-        z-index: 9;
-    }
+  #navbar-bars-fixed {
+    position: fixed;
+  }
 
-    #navbar-bars-fixed {
-        position: fixed;
-    }
+  #navbar-container-mobile {
+    height: 225px;
+  }
 
-    #navbar-container-mobile {
-        height: 225px;
-    }
+  .ui.menu:not(.vertical) .right.item,
+  .ui.menu:not(.vertical) .right.menu {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  }
 
-    .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
-        display: block;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-    }
+  .item-reversed:not(.title),
+  .ui.menu:not(.vertical) .item:not(.title) {
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    display: block;
+    height: 50px;
+    text-align: center;
+  }
 
-    .item-reversed:not(.title), .ui.menu:not(.vertical) .item:not(.title) {
-        position: relative;
-        background: rgba(0, 0, 0, 0.2);
-        left: 0px;
-        width: 100%;
-        top: 0px;
-        display: block;
-        height: 50px;
-        text-align: center;
-    }
+  .open-menu {
+    visibility: hidden;
+  }
 
-    .open-menu {
-        visibility: hidden;
-    }
+  .ui.menu:not(.vertical) .item {
+    background: none;
+    margin-top: 5px;
+  }
 
-    .ui.menu:not(.vertical) .item {
-        background: none;
-        margin-top: 5px;
-    }
+  .fixed > .right {
+    background: white;
+  }
 
-    .fixed > .right {
-        background: white;
-    }
+  .fixed > .right > .item-reversed:not(.title),
+  .ui.menu:not(.vertical) .item:not(.title) {
+    background: white;
+  }
 
-    .fixed > .right > .item-reversed:not(.title), .ui.menu:not(.vertical) .item:not(.title) {
-        background: white;
-    }
+  .ui.small.steps {
+    display: none;
+  }
 
-    .ui.small.steps {
-        display: none;
-    }
+  .ui.grid {
+    max-height: 500px;
+    width: 100%;
+  }
 
-    .ui.grid {
-        max-height: 500px;
-        width: 100%;
-    }
+  .extra.content {
+    display: none;
+  }
 
-    .extra.content {
-        display: none;
-    }
+  div.responsive-row {
+    display: block;
+    z-index: 99999999;
+  }
 
-    div.responsive-row {
-        display: block;
-        z-index: 99999999;
-    }
-
-    #role-content, #role-content > .content {
-        width: 300px;
-    }
+  #role-content,
+  #role-content > .content {
+    width: 300px;
+  }
 }

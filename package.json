@@ -5,7 +5,7 @@
   "private": false,
   "author": {
     "name": "Harris Geo",
-    "email": "charilaoss@gmail.com",
+    "email": "charilaoss@gmail.com"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
@@ -26,6 +26,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "format": "prettier --write \"src/**/*.*\" \"*.json\" \"*.js\" \"*.md\""
   }
 }
